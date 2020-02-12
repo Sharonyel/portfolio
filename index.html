@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,10 +9,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
@@ -51,8 +55,7 @@
         <div id="lead-content">
             <h1>Sharon Yelverton</h1>
             <h2>Full Stack Developer</h2>
-            <a href="SharonYelverton.pdf" target="_blank"
-                class="btn-rounded-white">Resume</a>
+            <!-- <a href="SharonYelverton.pdf" target="_blank" class="btn-rounded-white">Resume</a> -->
         </div>
         <!-- End #lead-content -->
 
@@ -73,7 +76,7 @@
                 <div class="col-md-4 aboutImg">
                     <img src="images/myphoto1.jpg" alt="Picture of Me">
                 </div>
-                <!-- <div class="col-md-1"></div> -->
+                <div class="col-md-1"></div>
                 <div class="col-md-7">
                     <h2 class="heading">About Me</h2>
 
@@ -147,71 +150,93 @@
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
-
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/findit.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Find It App</h3>
-                        <p>
-                            Looking for something... Let the Find It app help you find it. This app allows you to enter
-                            a city and
-                            and choose from a POI list. A list of that POI in that city will be displayed. To find out
-                            more about
-                            your selections, click it and you will be directed to a google search.
-                        </p>
-                        <a href="https://sharonyel.github.io/FindIt/">View Project</a>
-                        <br><br>
-                        <a href="https://github.com/Sharonyel/FindIt">Github</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+            <div class="gallery-section text-center" id="portfolio">
+                <div class="container">
+                    <div class="gallery-grids">
+                        <div class="top-gallery">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3 gallery-grid gallery1">
+                                <a href="https://github.com/Sharonyel/dayplanner" class="swipebox"><img
+                                        src="images/dayplanner.jpg" class="img-responsive" alt="/">
+                                    <div class="textbox">
+                                        <h4>Github</h4>
+                                        <div class="button"><a href="https://sharonyel.github.io/dayplanner"
+                                                class="swipebox"></a>View</div>
+                                    </div>
+                            </div></a>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3 gallery-grid gallery1">
+                                <a href="https://github.com/Sharonyel/burger" class="swipebox"><img
+                                        src="images/eatdaburger.jpg" class="img-responsive" alt="/">
+                                    <div class="textbox card-body">
+                                        <h4>Github</h4>
+                                        <div class="button"><a href="https://sharonyel.github.io/burger"
+                                                class="swipebox">View</a></div>
+                                    </div>
+                            </div></a>
+                            <div class="col-md-1"></div>
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/codequiz.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Code Quiz</h3>
-                        <p>
-                            Let's test your knowledge on HTML, CSS, and Javascript. Take this timed quiz and
-                            answer as many questions as you can before the time runs out. Your score will be posted
-                            at the end.
-                        </p>
-                        <a href="https://sharonyel.github.io/code-quiz/">View Project</a>
-                        <br><br>
-                        <a href="https://github.com/Sharonyel/code-quiz">Github</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                            <div class="col-md-3 gallery-grid gallery1">
+                                <a href="https://github.com/Sharonyel/weather_dashboard" class="swipebox"><img
+                                        src="images/weather.jpg" class="img-responsive" alt="Findit App">
+                                    <div class="card-body textbox">
+                                        <h4>Github</h4>
+                                        <div class="button"><a href="https://sharonyel.github.io/weather_dashboard"
+                                                class="swipebox">View</a></div>
+                                    </div>
+                            </div></a>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <br>
+                        <div class="top-gallery">
+                            <div class="col-md-1"></div>
 
+                            <div class="col-md-3 gallery-grid gallery1">
+                                <a href="https://github.com/Sharonyel/noteTaker" class="swipebox"><img
+                                        src="images/notetaker.jpg" class="img-responsive" alt="/">
+                                    <div class="textbox">
+                                        <h4>Github</h4>
+                                        <div class="button"><a href="https://sharonyel.github.io/noteTaker"
+                                                class="swipebox"></a>View</div>
+                                    </div>
+                            </div></a>
+                            <div class="col-md-1"></div>
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/weather.jpg" />
+                            <div class="col-md-3 gallery-grid gallery1">
+                                <a href="https://github.com/Sharonyel/code-quiz" class="swipebox"><img
+                                        src="images/codequiz.jpg" class="img-responsive" alt="/">
+                                    <div class="textbox card-body">
+                                        <h4>Github</h4>
+                                        <div class="button"><a href="https://sharonyel.github.io/code-quiz"
+                                                class="swipebox">View</a></div>
+                                    </div>
+                            </div></a>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3 gallery-grid gallery1">
+                                <a href="https://github.com/Sharonyel/passwordgen" class="swipebox"><img
+                                        src="images/passwordgen.jpg" class="img-responsive" alt="Findit App">
+                                    <div class="card-body textbox">
+                                        <h4>Github</h4>
+                                        <div class="button"><a href="https://sharonyel.github.io/passwordgen"
+                                                class="swipebox">View</a></div>
+                                    </div>
+                            </div></a>
+                            <div class="clearfix"> </div>
+                        </div>
+
+                        <link rel="stylesheet" href="css/swipebox.css">
+                        <script src="js/jquery.swipebox.min.js"></script>
+                        <script type="text/javascript">
+                            jQuery(function ($) {
+                                $(".swipebox").swipebox();
+                            });
+                        </script>
                     </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>
-                            The Weather Dashboard displays the current weather of the city of your choice. The 5 day
-                            forecast will also be displayed. Your search history will be displayed as well.
-                        </p>
-                        <a href="https://sharonyel.github.io/weather_dashboard/">View Project</a> <br><br>
-                        <a href=" https://github.com/Sharonyel/weather_dashboard">Github</a>
-                    </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
             </div>
         </div>
     </div>
@@ -223,6 +248,8 @@
             <li>JavaScript</li>
             <li>HTML</li>
             <li>jQuery</li>
+            <li>Sequelize</li>
+            <li>Passport</li>
             <li>Node.js</li>
             <li>Express Server</li>
             <li>Heroku</li>
@@ -237,7 +264,6 @@
             <li>JSON</li>
             <li>MySQL</li>
             <li>Bootstrap</li>
-            <!-- <li>Heroku</li> -->
         </ul>
     </div>
     <!-- End #skills -->
@@ -245,10 +271,10 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
+            <form method="POST" action="mailto:ladysharonyel@me.com?subject=Contact request from my Portfolio"
+                enctype="text/plain">
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
@@ -269,21 +295,34 @@
             </div>
             <div class="row">
                 <div class="col-sm-1">
-                    <a href="https://github.com/Sharonyel" target="_blank"><i class="fa fa-github fa-3x"
-                            aria-hidden="true"></i></a>
+                    <a href="https://github.com/Sharonyel" target="_blank">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                    <br>
+                    <strong style="color:rgb(18, 97, 170)">Github</strong>
                 </div>
                 <div class="col-sm-1">
-                    <a href="https://linkedin.com/in/sharon-yelverton-92758384" target="_blank"><i
-                            class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/sharon-yelverton-92758384" target="_blank">
+                        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    <br>
+                    <strong style="color:rgb(18, 97, 170)">linkedin</strong>
+                </div>
+                <div class="col-sm-1">
+                    <a href="SharonYelverton.pdf" target="_blank">
+                        <i class="fa fa-file fa-3x" aria-hidden="true"></i></a>
+                    <br>
+                    <strong style="color:rgb(18, 97, 170)">Resume</strong>
                 </div>
 
-                <div class="col-sm-6"></div>
+
+
+                <div class="col-sm-5"></div>
 
                 <div class="col-sm-4">
                     <strong>Email: </strong>
                     <a href="mailto:ladysharonyel@me.com">ladysharonyel@me.com</a>
                     <br>
                     <strong>Phone: </strong>704.622.5385<br>
+
                 </div>
             </div>
             <div class="row">
