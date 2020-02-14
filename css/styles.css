@@ -15,7 +15,7 @@ body{
 
 /* @keyframes dropHeader{0%{transform:translateY(-100%)}100%{transform:translateY(0)}} */
 header{
-    position:fixed;
+    position:absolute;
     top:0;left:0;right:0;
     text-align:center;
     z-index:20;
@@ -68,6 +68,9 @@ header a:focus{
 .card-link{
     color: whitesmoke;
 }
+.mailit{
+    color: white;
+}
 /* .card-link {
     padding: 20px;
     margin: 10px;
@@ -88,13 +91,17 @@ header a:focus{
     font-size:1.2em
 
 }
+.projImg{
+    width:350px; 
+    border-radius: 5%;
+}
 /* header.active{
     display:block
 } */
 /* header.sticky{position:fixed;z-index:999} */
-#menu.active{
+/* #menu.active{
     display:block
-}
+} */
 #mobile-menu-open{
     display:none;cursor:pointer;position:fixed;right:15px;top:10px;
     color:#5e0156;font-size:1.5em;z-index:20;padding:0 7px;
@@ -281,6 +288,17 @@ border-radius: 5%;
 .optional-section-block ul{padding:0 0 0 15px} */
 
 /* media queries */
+
+@media only screen and (max-width: 1196px){
+
+
+.projImg {
+    width: 200px;
+}
+}
+
+
+
 @media only screen and (max-width: 750px){
 #experience-timeline:before,#experience-timeline:after{
     left:23px
@@ -298,6 +316,9 @@ border-radius: 5%;
 }
 .vtimeline-content{
     margin-left:70px
+}
+.projImg {
+    width: 200px;
 }
 }
 @media only screen and (max-width: 992px){
@@ -327,6 +348,16 @@ border-radius: 5%;
     #about p{
         text-align:left
     }
+    .projImg {
+        width: 200px;
+    }
+    .card-title {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+
+    
 }
 @media only screen and (max-width: 768px){
     header{
@@ -339,16 +370,16 @@ border-radius: 5%;
     #mobile-menu-open,#mobile-menu-close{
         display:block
     }
-        #menu{
+        /* #menu{
             height:100%;
             overflow-y:auto;
             box-shadow:none;
             border-radius:0;
             width:100%
-        }
-        #menu li{
+        } */
+        /* #menu li{
             display:block;margin-bottom:10px
-        }
+        } */
         #lead-content h1{
             font-size:2em
         }
